@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>O metodo queryselector()</h1>
+
+    <p class="example">eu sou um parágrafo</p>
+    <p class="example">eu sou um parágrafo</p>
+    <div id="nome">
+        Meu nome
+    </div>
+    <script>
+       const lista = document.querySelectorAll(".example")
+        for(let i = 0; i < lista.lengt ; i++){
+            lista[i].style.backgroudColor = "yellow"
+        }
+    </script>
+</body>
+</html>

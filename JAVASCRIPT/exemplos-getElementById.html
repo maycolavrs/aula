@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos do getElementById</title>
+</head>
+<body>
+    <h1>Modificar o conteudo de um elemento</h1>
+    <div id="meuElemento">Conteudo inicial</div>
+    <button onclick="Modificar()">Mudar</button>
+    <hr>
+    <h1>Alterar o estilo do elemento</h1>
+    <div id="cor">texto colorido</div>
+    <button onclick ="colorir()">colorir</button>
+    <hr>
+        <input id="text" type="text" value="texto inicial">
+        <button onclick="">pegar texto</button>
+        <p id="conteudo"></p>
+        <hr>
+    <h1>Esconder elemento </h1>
+    <div class="esconder">texto para esconder</div>
+    <button>Esconder</button>
+
+</body>
+    <Script>
+        function esconderTexto(){
+            var elemento = document.getElementById("esconder");
+            elemento.style.display = "none";
+        }
+        function aparecerElemento(){
+            var elemento = document.getElementById("esconder");
+            elemento.style.display = "";
+        }
+    </Script>
+
+    <script>
+        function pegar(){
+
+            var elemento = getElementById("texto");
+            var conteudo = getElementById("conteudo");
+            var valor = elemento.value;
+            conteudo.innerHTML= valor;
+            
+        }
+    </script>
+    <script>
+        function Modificar(){
+            var elemento = document.getElementById("meuElemento");
+            elemento.innerHTML = "Gabi";
+            console.log(elemento)
+        }
+
+        function colorir(){
+            var elemento = document.getElementById("cor")
+            elemento.style.fontSize = '50px'; 
+
+        }
+    </script>
+</html>
